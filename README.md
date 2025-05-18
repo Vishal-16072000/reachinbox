@@ -55,14 +55,9 @@ The Google login is handled through an external URL and redirects back to the /o
 
 Make sure to update the redirect URL if you're deploying on a different domain.
 
+
 🌐 Deployment
 The project is hosted on Firebase Hosting. After building the project, run the following commands:
 
-bash
-Copy
-Edit
 npm run build
 firebase deploy
-
-
-📸 Screenshots
