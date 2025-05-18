@@ -1,12 +1,68 @@
-# React + Vite
+# Reachinbox Clone - Google Login & Mail Client UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend React project inspired by the core functionalities of Reachinbox. It includes a Google authentication flow, a clean login page UI, and a mail client layout to view and manage email threads.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Google Login Integration (via external API)
+- Responsive and modern UI
+- Dark/Light theme toggle
+- Navbar with logout functionality
+- Mail list and detailed thread view
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React JS**
+- **Tailwind CSS**
+- **React Router**
+- **React Icons**
+- **Firebase Hosting**
+
+## 📁 Folder Structure
+src/
+├── Components/
+│ └── NavBar.jsx
+├── Pages/
+│ ├── Login.jsx
+│ └── Onebox.jsx
+├── Context/
+│ └── ThemeContext.js
+└── App.jsx
+
+
+
+## 🧑‍💻 How to Run Locally
+
+1. Clone the repository:
+git clone https://github.com/username/repo-name.git
+cd repo-name
+
+
+2. Install dependencies:
+npm install
+
+
+3.Start the development server:
+npm run dev
+
+
+4. Visit http://localhost:5173
+
+
+
+🔐 Google Login Redirect
+The Google login is handled through an external URL and redirects back to the /onebox route post-authentication.
+
+Make sure to update the redirect URL if you're deploying on a different domain.
+
+🌐 Deployment
+The project is hosted on Firebase Hosting. After building the project, run the following commands:
+
+bash
+Copy
+Edit
+npm run build
+firebase deploy
+
+
+📸 Screenshots
